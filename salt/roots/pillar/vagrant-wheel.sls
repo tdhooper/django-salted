@@ -1,5 +1,5 @@
 wheel:
   path: /home/vagrant/wheel
   zip: wheel-requirements.tar.gz
-  source: https://s3.amazonaws.com/gibbon-deployment/wheel-requirements.tar.gz
-  md5: 932669db31cc05684786e4a8bf771a3c
+  source: /home/vagrant/wheel-requirements.tar.gz
+  md5: 1a5a66af3ecd99cc8c8818d63d638317
