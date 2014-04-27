@@ -58,7 +58,6 @@ def wheel():
     sudo('{pip} wheel --wheel-dir={wheel} -r {example}/requirements.txt'.format(pip=VENV_PATH + "/bin/pip",
                                                                                 wheel=WHEEL_PATH + '/' + PROJECT_NAME,
                                                                                 example=PROJECT_PATH),
-         user="www-data",
          quiet=False)
 
     # Zip up
@@ -66,7 +65,6 @@ def wheel():
     with cd(WHEEL_PATH):
         sudo('tar czf {name} {project}/'.format(name=WHEEL_NAME,
                                                 project=PROJECT_NAME),
-             user="www-data",
              quiet=False)
         sudo('mv {name} /vagrant/'.format(name=WHEEL_NAME),
              quiet=False)
